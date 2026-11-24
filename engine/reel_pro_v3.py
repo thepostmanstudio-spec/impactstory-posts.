@@ -47,10 +47,56 @@ def ease_out(x):
 
 
 # ---------------- picture ----------------
+def photo_shot(path, opt, nframes, out):
+    """Ken Burns on a still photo. opt: focus0/focus1 [x,y] 0..1, z0/z1 zoom, fit (blurred bg)."""
+    from PIL import ImageEnhance
+    src = Image.open(f"{R}/{path}").convert("RGB")
+    src = ImageEnhance.Sharpness(src).enhance(1.25)
+    sw, sh = src.size
+    f0, f1 = opt.get("focus0", [0.5, 0.45]), opt.get("focus1", opt.get("focus0", [0.5, 0.45]))
+    z0, z1 = opt.get("z0", 1.0), opt.get("z1", 1.1)
+    bg = None
+    if opt.get("fit"):
+        cs = max(W / sw, H / sh)
+        bg = src.resize((int(sw * cs) + 1, int(sh * cs) + 1), Image.BILINEAR)
+        bg = bg.crop(((bg.width - W) // 2, (bg.height - H) // 2, (bg.width - W) // 2 + W, (bg.height - H) // 2 + H))
+        bg = ImageEnhance.Brightness(bg.filter(ImageFilter.GaussianBlur(40))).enhance(0.55)
+    proc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
+                             "-r", str(FPS), "-i", "-", *ENC, out], stdin=subprocess.PIPE)
+    for k in range(nframes):
+        u = k / max(1, nframes - 1)
+        e = u * u * (3 - 2 * u)
+        z = z0 + (z1 - z0) * e
+        fx = f0[0] + (f1[0] - f0[0]) * e
+        fy = f0[1] + (f1[1] - f0[1]) * e
+        if bg is not None:
+            fw = int(W * z)
+            fh = int(sh * fw / sw)
+            fg = src.resize((fw, fh), Image.LANCZOS)
+            frame = bg.copy()
+            frame.paste(fg, ((W - fw) // 2, int(H * 0.40 - fh / 2)))
+        else:
+            cs = max(W / sw, H / sh) * z
+            cw, ch = W / cs, H / cs
+            x0 = min(max(fx * sw - cw / 2, 0), sw - cw)
+            y0 = min(max(fy * sh - ch / 2, 0), sh - ch)
+            frame = src.resize((W, H), Image.LANCZOS, box=(x0, y0, x0 + cw, y0 + ch))
+        proc.stdin.write(frame.tobytes())
+    proc.stdin.close()
+    proc.wait()
+
+
 def render_shots():
     files = []
     for i, (src, ss, a, b) in enumerate(PLAN["shots"]):
         dur = b - a
+        if src.startswith("photo:"):
+            out = f"{SEG}/s{i:02d}.mp4"
+            n = round(b * FPS) - round(a * FPS)
+            photo_shot(src[6:], ss, n, f"{SEG}/s{i:02d}.tmp.mp4")
+            os.replace(f"{SEG}/s{i:02d}.tmp.mp4", out)
+            files.append(out)
+            continue
         n = round(b * FPS) - round(a * FPS)
         out, tmp = f"{SEG}/s{i:02d}.mp4", f"{SEG}/s{i:02d}.tmp.mp4"
         z = f"1.0+0.07*t/{dur:.3f}" if i % 2 == 0 else f"1.07-0.07*t/{dur:.3f}"
@@ -79,7 +125,7 @@ def logo(width):
     return LOGO.resize((width, int(LOGO.height * width / LOGO.width)), Image.LANCZOS)
 
 
-def static_layer():
+def static_layer(label="Representative footage"):
     a = np.zeros((H, W, 4), dtype=np.uint8)
     ys = np.arange(H)
     bot = np.clip((ys - 1000) / 920, 0, 1) ** 1.5 * 120
@@ -94,9 +140,9 @@ def static_layer():
     d.rounded_rectangle((64, 128, 64 + tw + 48, 188), radius=30, fill=GOLD)
     d.text((88, 136), t, font=f, fill=TEAL)
     fr = font("Medium", 24)
-    rw = d.textlength("Representative footage", font=fr)
+    rw = d.textlength(label, font=fr)
     d.rounded_rectangle((60, 200, 60 + rw + 24, 236), radius=18, fill=(0, 0, 0, 120))
-    d.text((72, 203), "Representative footage", font=fr, fill=(240, 244, 242))
+    d.text((72, 203), label, font=fr, fill=(240, 244, 242))
     lg = logo(250)
     d.rounded_rectangle((W - 250 - 84, 118, W - 44, 132 + lg.height + 14), radius=26, fill=(0, 0, 0, 110))
     img.alpha_composite(lg, (W - 250 - 64, 132))
@@ -280,13 +326,15 @@ def end_frame(t, bg):
     p = ease_out((e - 1.4) / 0.4)
     if p > 0:
         f = font("Light", 28)
-        txt = "Representative footage, not of the people named"
+        txt = "Photos: Humanity First Foundation · other footage representative"
         d.text(((W - d.textlength(txt, font=f)) / 2, 1560), txt, font=f, fill=(190, 222, 215, int(255 * p)))
     return img
 
 
 def overlay_stream():
-    base = static_layer()
+    base_stock = static_layer()
+    base_photo = static_layer("Photo: Humanity First Foundation")
+    photo_ranges = [(a, b) for src, _, a, b in PLAN["shots"] if src.startswith("photo:")]
     chs = [(c[0], c[1]) for c in chunks()]
     events = [(c[2], c[3], i) for i, c in enumerate(chunks())]
     hook_end = PLAN["hook"][1]
@@ -312,7 +360,9 @@ def overlay_stream():
                 a, b = PLAN[key]
                 if a <= t < b:
                     parts.append((key, round(t, 3)))
-        ck = tuple(parts)
+        is_photo = any(a <= t < b for a, b in photo_ranges)
+        base = base_photo if is_photo else base_stock
+        ck = (is_photo,) + tuple(parts)
         if ck in cache:
             proc.stdin.write(cache[ck])
             continue
