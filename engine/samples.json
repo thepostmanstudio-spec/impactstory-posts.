@@ -1,0 +1,50 @@
+{
+  "date": "SAMPLE",
+  "posts": [
+    {
+      "id": "p1",
+      "format": "carousel",
+      "pillar": "changemaker",
+      "tag": "Changemaker",
+      "icon": "school",
+      "headline": "She turned a *one-room school* into her village's pride",
+      "sub": "How one teacher in rural Maharashtra brought 200 children back to class.",
+      "slides": [
+        {"kicker": "The start", "icon": "people", "title": "Half the children had *stopped coming*", "body": "In 2019 the school had one room, no toilets and attendance below 50%. Families sent children to work in the fields instead."},
+        {"kicker": "What changed", "stat": "200+", "stat_label": "children back in class", "title": "Classes moved outdoors, parents were invited in", "body": "She ran evening sessions for parents and turned the courtyard into a reading space."},
+        {"kicker": "Today", "icon": "star", "title": "Attendance is now *above 95%*", "body": "The village panchayat and a local company foundation helped add two classrooms and a library."}
+      ],
+      "takeaway": "One person who refuses to give up can *change a whole village*.",
+      "source": "Sample source",
+      "caption": "Sample caption",
+      "time": "20:45",
+      "reel": true,
+      "story": true
+    },
+    {
+      "id": "p2",
+      "format": "hero",
+      "pillar": "goodnews",
+      "tag": "Good news",
+      "icon": "drop",
+      "headline": "A village that ran dry every summer now has *water all year*",
+      "body": "Farmers dug and deepened 12 farm ponds with help from a company foundation. Two years on, wells stay full through May and families no longer migrate for work.",
+      "source": "Sample source",
+      "caption": "Sample caption",
+      "time": "08:30"
+    },
+    {
+      "id": "p3",
+      "format": "data",
+      "pillar": "explainer",
+      "tag": "By the numbers",
+      "stat": "₹34,909 cr",
+      "stat_label": "spent on social good by Indian companies in FY 2023-24",
+      "headline": "Where India Inc's *good work* money goes",
+      "points": ["Education gets the biggest share", "Health and sanitation come next", "Maharashtra receives the most of any state"],
+      "source": "National CSR Data Portal, MCA",
+      "caption": "Sample caption",
+      "time": "17:30"
+    }
+  ]
+}
