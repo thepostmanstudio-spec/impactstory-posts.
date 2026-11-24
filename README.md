@@ -10,17 +10,34 @@ Warm, inspiring and celebratory, like The Better India. Companies must see us as
 - Say "social good" / "good work" rather than "CSR" in headlines (CSR is fine in sources).
 - Credit the person, company or NGO in every caption, and name where the story came from.
 
-## Visuals — Canva, unique image on every slide (since 24 Nov 2026)
-Every post and every carousel slide gets its own picture. Posts are built in **Canva** (Canva Business, connected as a connector) with `create-design`, not with the old graphic engine:
-- Format "Instagram Post (Portrait)" for feed posts/carousels (Canva makes 1080x1440); "Instagram Story" (1080x1920) for the Reel version.
-- Brief = exact wording page by page + a scene description for each page's picture + brand rules (Deep Teal #005B50 gradient for legibility, Warm Gold #E8B04B highlights, Poppins, tag pill, "@theimpactstory" bottom-right, small "AI image" label top-right on every photo page). Pass `references: ["MAHb1uHyC8A"]` (white horizontal logo).
-- Canva's pictures are AI-generated, so: label every photo page "AI image" (small, top-right), set Metricool `instagramData.isAiGenerated: true`, and add "Images are AI-generated and representative." to the caption. Scenes show representative people and places — never present a picture as the real person named in the story.
-- After generating: `read-design` (design_content + thumbnails for every page) and check every word and number against batch.json. Canva usually retypes the logo as text — open a transaction, delete those logo text/dot elements and `insert_fill` the real logo (asset `MAHb1uHyC8A` white on photos/teal, `MAHb1lv-vV8` colour on the gold page) bottom-left at about left 62, top 1330, 260x52. Fix typos with `find_and_replace_text`. Commit.
-- `export-design` as PNG width 1080, then schedule in Metricool **right away** (Canva export links expire after a few hours; Metricool copies them when the post is created).
-- Reel: export the **checked carousel design itself** as mp4 (`export-design` type mp4, quality "vertical_1080p") — same pictures, already proof-read. Canva's mp4 is silent, so schedule it as a REEL with Metricool `instagramData.audioConfiguration: {"audioId": "2477944699150252", "audioVolume": 60}` ("Peaceful Piano" by Dr. Pheel; another calm instrumental from a Metricool search is fine — never a beat). If Metricool rejects the audio, use the engine Reel (`python3 engine/reel.py`, soft music) instead — never post a silent Reel.
-- Story: the carousel cover PNG.
-- The Python engine in `engine/` is now a fallback only (if Canva fails, render with it so the day still posts).
+## Visuals — REAL PHOTOS in Canva (since 24 Nov 2026, owner's standard)
+The owner wants **excellent, realistic, human-made design. No AI images, ever.** Do not use Canva `generate-design` pictures, `generate-image`, ElevenLabs, or any AI image tool for post pictures.
 
+### 1. Find real photos
+- Free-licence stock only: **Unsplash** (images.unsplash.com) or **Pexels**. Use WebSearch/WebFetch to find a photo page and its direct image URL, e.g. `https://images.unsplash.com/photo-XXXX?w=1600&q=80&fm=jpg`.
+- Never use news, agency, Instagram or company photos (copyright). Never show a stock photo as the real person named in the story.
+- Choose natural, documentary-style Indian scenes: real faces, real light, no watermarks, no visible brand logos, no cartoon or character T-shirts, no text in the picture. Each slide gets a different photo; portrait or tall crops work best.
+- Upload with Canva `upload-asset-from-url` (Canva fetches it server-side; the workspace can't download image hosts).
+
+### 2. Build the page (Instagram Post Portrait 1080x1440; Story/Reel 1080x1920)
+Start from the previous day's design (`copy-design` / same structure) or a blank design, then in one `edit-design` transaction per design:
+- Photo: `insert_fill` the asset as an element from top 0 to T (T ≈ 800–950), full width; frame faces with `crop_media`.
+- Fade: 14 rectangles, each exactly 20 px tall, colour #005B50, opacity 0.065×k (k = 1..14), from T-280 to T. **No overlap** between bands, or stripes appear.
+- Solid #005B50 rectangle from T to 1440 (or 1920).
+- Layer order: send to back in this order — solid, bands (reversed), photo — so text stays on top.
+- Text: Poppins only, headline white with one Warm Gold #E8B04B phrase, max ~20 words per slide, generous margins (≥ 64 px), tag pill top-left, "@theimpactstory" bottom-right, logo bottom-left (table below).
+- Rotate layouts across days (photo top / full-bleed photo with fade bottom / split) so the feed doesn't look templated. Takeaway/CTA page can be Warm Gold with the on-gold logo.
+- Commit the transaction.
+
+### 3. Check before export (every page)
+- `read-design` with thumbnails: every word and number matches batch.json; font is Poppins on every text box (if a box shows another font and the tool can't change it, rebuild that text box); contrast is readable; nothing crops a face; no text or logos inside the photo; logo doesn't blend in.
+
+### 4. Export and schedule
+- `export-design` PNG width 1080, then schedule in Metricool **right away** (Canva links expire in a few hours).
+- Metricool `instagramData.isAiGenerated: false`. No "AI image" label. Caption line: "Representative photo(s), not of the people named." (or "Representative photos." when no person is named).
+- Reel: export the checked carousel as mp4 (`export-design` type mp4, quality "vertical_1080p"). Canva's mp4 is silent, so schedule as REEL with `instagramData.audioConfiguration: {"audioId": "2477944699150252", "audioVolume": 60}` ("Peaceful Piano", Dr. Pheel; another calm instrumental is fine, never a beat). Never post a silent Reel.
+- Story: the carousel cover PNG, or a teal text card.
+- The Python engine in `engine/` is a fallback only (if Canva fails, so the day still posts).
 
 ### Logo variants (pick by background, never let the logo blend in)
 Canva retypes the logo as text, so after generating, delete the logo element and `insert_fill` the right asset (never `update_fill`, it crops):
@@ -38,7 +55,7 @@ Rule: the gold sun must never sit on gold, and teal text must never sit on teal.
 - Every name, number, place and date must be confirmed in a source you actually read: the primary source (company / NGO / government release, PIB, Parliament reply, csr.gov.in) or **two** independent reliable publications. If you can't confirm it, drop it — don't soften it.
 - Never invent quotes, numbers or rankings. Quotes only word-for-word from a reliable source.
 - Mention an Instagram handle only if confirmed from the person's/company's official page; otherwise plain names.
-- Rewrite in your own words. Never copy sentences, layouts or photos from other pages. Graphic visuals only (the engine draws them) — no photos.
+- Rewrite in your own words. Never copy sentences, layouts or photos from other pages. Photos: free-licence Unsplash/Pexels only, always labelled representative in the caption.
 
 ## Daily mix (4 feed posts + 2 Reels + 1 Story)
 | Time (IST) | What | Format |
