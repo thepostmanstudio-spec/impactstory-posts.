@@ -79,20 +79,21 @@ def draw_lines(lines, weight, size, x, y, color, hi_color=GOLD, lead=1.15, align
     return "".join(out), y - size * lead
 
 
-def fit(text, weight, max_size, min_size, width, max_lines):
-    """Largest size (step 2) at which text fits in max_lines."""
+def fit(text, weight, max_size, min_size, width, max_lines, max_h=None, lead=1.15):
+    """Largest size (step 2) at which text fits in max_lines (and max_h pixels if given)."""
     size = max_size
     while size > min_size:
-        if len(wrap(text, weight, size, width)) <= max_lines:
+        lines = wrap(text, weight, size, width)
+        if len(lines) <= max_lines and (max_h is None or len(lines) * size * lead <= max_h):
             break
         size -= 2
     return size, wrap(text, weight, size, width)
 
 
 def block(text, weight, max_size, min_size, max_lines, x, y, color, hi=GOLD, lead=1.15,
-          align="left", width=TW):
-    size, lines = fit(text, weight, max_size, min_size, width, max_lines)
-    if len(lines) > max_lines:
+          align="left", width=TW, max_h=None):
+    size, lines = fit(text, weight, max_size, min_size, width, max_lines, max_h, lead)
+    if len(lines) > max_lines or (max_h and len(lines) * size * lead > max_h * 1.02):
         raise ValueError(f"Text too long even at {min_size}px: {text[:60]}...")
     _, top = ink_top(weight, size)
     svg, last = draw_lines(lines, weight, size, x, y + top, color, hi, lead, align, width)
@@ -250,8 +251,7 @@ def slide(sl, i, total):
     c.append(tt)
     y = last + 60
     if sl.get("body"):
-        room = int((H - 200 - y) / (42 * 1.45))
-        bd, last, _ = block(sl["body"], "Regular", 42, 32, max(2, min(room, 8)), M, y, SOFT, lead=1.45)
+        bd, last, _ = block(sl["body"], "Regular", 42, 30, 9, M, y, SOFT, lead=1.45, max_h=H - 190 - y)
         c.append(bd)
     s.append(centre(c, y0, last, 190, H - 170))
     s.append(footer(False))
@@ -281,8 +281,7 @@ def hero(p):
     c = [hl]
     y = last + 70
     if p.get("body"):
-        room = int((H - 260 - y) / (40 * 1.45))
-        bd, last, _ = block(p["body"], "Regular", 40, 30, max(2, min(room, 7)), M, y, SOFT, lead=1.45)
+        bd, last, _ = block(p["body"], "Regular", 40, 30, 9, M, y, SOFT, lead=1.45, max_h=H - 230 - y)
         c.append(bd)
     s.append(centre(c, 380, last, 320, H - 200))
     if p.get("source"):

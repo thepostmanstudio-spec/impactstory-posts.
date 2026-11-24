@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-25",
+  "posts": [
+    {
+      "id": "p1",
+      "time": "08:30",
+      "format": "hero",
+      "pillar": "hero",
+      "tag": "Unsung hero",
+      "icon": "heart",
+      "headline": "He started with pocket money. Now he has served *10 million free meals*",
+      "body": "In 2016, pharmacy student Mohd Sujathullah fed hungry strangers at Secunderabad Railway Station. Today his Humanity First Foundation serves breakfast outside Hyderabad's government hospitals every morning, and he runs a hospital for people who can't afford care.",
+      "source": "The Logical Indian, The Better India",
+      "caption": "It began with a few food packets bought with a student's pocket money. 🍲\n\nIn 2016, Mohd Sujathullah, then a 22-year-old pharmacy student, saw people going hungry at Secunderabad Railway Station and decided to feed them. A decade later, his Humanity First Foundation has served more than 10 million free meals, with breakfast handed out every morning outside government hospitals in Hyderabad. He has also set up Humanity Hospital to help people who can't afford treatment.\n\nOne small act, repeated every day for 10 years. 💛\n\nTag someone who believes small acts add up 👇\n\nSources: The Logical Indian, The Better India\n\n#TheImpactStory #UnsungHeroes #Changemakers #Hyderabad #FeedTheHungry #Kindness #GoodNews"
+    },
+    {
+      "id": "p2",
+      "time": "12:30",
+      "format": "carousel",
+      "pillar": "company",
+      "tag": "Companies doing good",
+      "icon": "school",
+      "headline": "From 36 schools to *6.26 lakh students*: Ashok Leyland's Road to School",
+      "sub": "How a truck maker's foundation is helping children in government schools learn, stay and grow.",
+      "slides": [
+        {
+          "kicker": "Where it began",
+          "icon": "school",
+          "title": "2015: *36 government schools* in Krishnagiri, Tamil Nadu",
+          "body": "Ashok Leyland started Road to School near its plants with its partner NGO, Learning Links Foundation, to close learning gaps in rural government schools."
+        },
+        {
+          "kicker": "What children get",
+          "icon": "book",
+          "title": "Reading, maths, health, sports and *art*",
+          "body": "The programme supports foundational literacy and numeracy, wellness sessions, structured sports and creative learning, and works with parents and communities to keep children in school."
+        },
+        {
+          "kicker": "Today",
+          "stat": "6.26 lakh",
+          "stat_label": "students in 4,585 government schools",
+          "title": "Now across *9 states* and 25 districts",
+          "body": "Since 2022, Road to Livelihood also helps students in Classes 9 to 12 with digital skills, spoken English and career guidance. The goal: 10 lakh students."
+        }
+      ],
+      "takeaway": "When a company invests in classrooms, *a whole generation* gets a better start.",
+      "source": "India CSR, Ashok Leyland, Autocar Professional",
+      "caption": "From 36 schools to more than 6 lakh students. 📚\n\nIn 2015, Ashok Leyland Foundation began Road to School with Learning Links Foundation in 36 government schools in Krishnagiri, Tamil Nadu. Today it reaches 6.26 lakh students in 4,585 government schools across 9 states, with support for reading, maths, health, sports and art. Its Road to Livelihood programme now helps older students get ready for college and jobs.\n\nWhich company's good work should we feature next? 👇\n\nSources: India CSR, Ashok Leyland, Autocar Professional\n\n#TheImpactStory #CompaniesDoingGood #Education #GovernmentSchools #SocialGood #AshokLeyland #GoodNews",
+      "reel": true,
+      "reel_time": "13:30",
+      "reel_caption": "36 schools → 6.26 lakh students 📚\n\nHow Ashok Leyland's Road to School is helping children in government schools learn and stay in class.\n\nWhich company should we feature next? 👇\n\n#TheImpactStory #CompaniesDoingGood #Education #SocialGood #GoodNews"
+    },
+    {
+      "id": "p3",
+      "time": "17:30",
+      "format": "data",
+      "pillar": "explainer",
+      "tag": "By the numbers",
+      "stat": "₹12,134 cr",
+      "stat_label": "given by Indian companies to education in FY 2023-24",
+      "headline": "Education is India Inc's *biggest good-work* priority",
+      "points": [
+        "Total social-good spending: ₹34,909 crore in FY 2023-24",
+        "Up from ₹10,066 crore in FY 2014-15",
+        "27,188 companies took part in FY 2023-24"
+      ],
+      "source": "Ministry of Corporate Affairs (PIB, National CSR Data Portal)",
+      "caption": "More than ₹12,000 crore for classrooms in one year. 🎓\n\nIn FY 2023-24, Indian companies spent ₹34,909 crore on social good, and education got the biggest share at ₹12,134 crore. That total has more than tripled from ₹10,066 crore in FY 2014-15, and 27,188 companies contributed in FY 2023-24.\n\nWhich cause do you think deserves more support? 👇\n\nSource: Ministry of Corporate Affairs (PIB release, National CSR Data Portal)\n\n#TheImpactStory #SocialGood #Education #IndiaInc #ByTheNumbers #GoodNews"
+    },
+    {
+      "id": "p4",
+      "time": "20:45",
+      "format": "carousel",
+      "pillar": "changemaker",
+      "tag": "Changemaker",
+      "icon": "leaf",
+      "headline": "How a woman sarpanch helped her village win *India's first climate award*",
+      "sub": "Dawwa in Gondia, Maharashtra, chose trees, solar power and people-led change.",
+      "slides": [
+        {
+          "kicker": "Who she is",
+          "icon": "people",
+          "title": "Yogeshwari Chaudhary, *Dawwa's first woman sarpanch*",
+          "body": "A schoolteacher from Dawwa in Sadak Arjuni taluka, Gondia, she stepped up to lead her village through long gram sabha meetings and decisions taken together."
+        },
+        {
+          "kicker": "What the village did",
+          "stat": "1,16,000",
+          "stat_label": "trees planted",
+          "title": "Solar power, mixed crops and *greener habits*",
+          "body": "Farmers tried solar irrigation, women's self-help groups joined decisions, and waste was turned into compost for kitchen gardens."
+        },
+        {
+          "kicker": "The result",
+          "icon": "star",
+          "title": "First in India to win the *Climate Action Special Panchayat Award*",
+          "body": "Dawwa Gram Panchayat won the award at the National Panchayat Awards 2023-24, along with a ₹1 crore prize."
+        }
+      ],
+      "takeaway": "Big climate change can start with *one village* that decides to act together.",
+      "source": "The Better India, The Hitavada",
+      "caption": "A small village in Gondia just showed India how climate action is done. 🌱\n\nUnder Yogeshwari Chaudhary, its first woman sarpanch, Dawwa in Maharashtra planted more than 1,16,000 trees, brought in solar power and got farmers and women's self-help groups making decisions together. The result: Dawwa Gram Panchayat became the first in India to win the Climate Action Special Panchayat Award, with a ₹1 crore prize.\n\nWhich village near you deserves a feature? Tell us below 👇\n\nStory via The Better India; award reported by The Hitavada\n\n#TheImpactStory #Maharashtra #Gondia #WomenLeaders #ClimateAction #Sarpanch #Changemakers",
+      "reel": true,
+      "reel_time": "19:30",
+      "reel_caption": "1,16,000 trees. Solar power. India's first climate award for a panchayat. 🌱\n\nMeet Dawwa, Gondia, and its first woman sarpanch.\n\nWhich village should we feature next? 👇\n\n#TheImpactStory #Maharashtra #ClimateAction #WomenLeaders #GoodNews",
+      "story": true,
+      "story_time": "21:05"
+    }
+  ]
+}
