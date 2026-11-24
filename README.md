@@ -10,6 +10,17 @@ Warm, inspiring and celebratory, like The Better India. Companies must see us as
 - Say "social good" / "good work" rather than "CSR" in headlines (CSR is fine in sources).
 - Credit the person, company or NGO in every caption, and name where the story came from.
 
+## Visuals — Canva, unique image on every slide (since 24 Nov 2026)
+Every post and every carousel slide gets its own picture. Posts are built in **Canva** (Canva Business, connected as a connector) with `create-design`, not with the old graphic engine:
+- Format "Instagram Post (Portrait)" for feed posts/carousels (Canva makes 1080x1440); "Instagram Story" (1080x1920) for the Reel version.
+- Brief = exact wording page by page + a scene description for each page's picture + brand rules (Deep Teal #005B50 gradient for legibility, Warm Gold #E8B04B highlights, Poppins, tag pill, "@theimpactstory" bottom-right, small "AI-generated representative image" label top-right on every photo page). Pass `references: ["MAHb1uHyC8A"]` (white horizontal logo).
+- Canva's pictures are AI-generated, so: label every photo page "AI-generated representative image", set Metricool `instagramData.isAiGenerated: true`, and add "Images are AI-generated and representative." to the caption. Scenes show representative people and places — never present a picture as the real person named in the story.
+- After generating: `read-design` (design_content + thumbnails for every page) and check every word and number against batch.json. Canva usually retypes the logo as text — open a transaction, delete those logo text/dot elements and `insert_fill` the real logo (asset `MAHb1uHyC8A` white on photos/teal, `MAHb1lv-vV8` colour on the gold page) bottom-left at about left 62, top 1330, 260x52. Fix typos with `find_and_replace_text`. Commit.
+- `export-design` as PNG width 1080, then schedule in Metricool **right away** (Canva export links expire after a few hours; Metricool copies them when the post is created).
+- Reel: `create-design` format "Instagram Story", references [carousel design id, "MAHb1uHyC8A"], "vertical 9:16 Reel version, same images and wording, logo top centre, gentle text animations", check it, then export **mp4** and schedule as REEL.
+- Story: the carousel cover PNG.
+- The Python engine in `engine/` is now a fallback only (if Canva fails, render with it so the day still posts).
+
 ## Accuracy (posts go out with no human review)
 - Every name, number, place and date must be confirmed in a source you actually read: the primary source (company / NGO / government release, PIB, Parliament reply, csr.gov.in) or **two** independent reliable publications. If you can't confirm it, drop it — don't soften it.
 - Never invent quotes, numbers or rankings. Quotes only word-for-word from a reliable source.
