@@ -24,15 +24,16 @@ END_START, TOTAL = 31.45, 35.5
 
 # [clip, source start, reel start, reel end, focus x 0..1, pan dx]
 SHOTS = [
-    ["pb_294427", 1.0, 0.0, 2.2, 0.30, 0.04],
-    ["pb_144868", 0.0, 2.2, 4.0, 0.30, 0.06],
-    ["pb_165391", 2.0, 4.0, 7.0, 0.50, -0.08],
+    ["pb_294427", 1.0, 0.0, 1.95, 0.30, 0.04],
+    ["map_kerala", 0.0, 1.95, 4.0, 0.50, 0.0],
+    ["pb_144868", 0.0, 4.0, 7.0, 0.30, 0.06],
     ["pb_294427", 5.0, 7.0, 10.7, 0.35, 0.03],
     ["pb_127177", 2.0, 10.7, 14.3, 0.50, 0.05],
     ["pb_127175", 1.0, 14.3, 18.9, 0.55, -0.05],
     ["pb_134471", 2.0, 18.9, 20.4, 0.24, 0.03],
-    ["pb_93317", 18.0, 20.4, 23.0, 0.50, 0.0],
-    ["pb_127878", 1.0, 23.0, 25.9, 0.50, 0.05],
+    ["pb_93317", 18.0, 20.4, 22.6, 0.50, 0.0],
+    ["pb_127878", 1.0, 22.6, 23.95, 0.50, 0.05],
+    ["map_patna", 0.0, 23.95, 25.9, 0.50, 0.0],
     ["pb_304786", 3.0, 25.9, 29.0, 0.50, -0.08],
     ["pb_243239", 4.0, 29.0, TOTAL, 0.45, 0.05],
 ]
@@ -49,14 +50,16 @@ PHRASES = [  # chunks separated by " | "
     ("Small farms. | Big dreams.", 29.0, 31.22, "Big"),
 ]
 GOLD_EXTRA = {"Ratna", "Award", "lakh.", "dreams.", "FIRST.", "No."}
-HOOK = (0.0, 3.6)
+HOOK = (0.0, 1.95)
 NAME = (3.9, 6.95)
 COUNTERS = [  # start, end, value, prefix, label, indian format
     (10.9, 14.1, 500, "~", "indigenous cattle", False),
     (14.4, 18.8, 1583, "", "applicants across India", False),
     (25.95, 28.9, 500000, "₹", "first prize", True),
 ]
-STAMP = (20.45, 25.6)
+STAMP = (22.65, 23.95)
+MILKDAY = (20.45, 22.6)
+NO_LABEL = [(1.95, 4.0), (23.95, 25.9)]
 
 
 def run(cmd):
@@ -108,7 +111,7 @@ def logo(width):
     return LOGO.resize((width, int(LOGO.height * width / LOGO.width)), Image.LANCZOS)
 
 
-def static_layer():
+def static_layer(label=True):
     a = np.zeros((H, W, 4), dtype=np.uint8)
     ys = np.arange(H)
     bot = np.clip((ys - 1000) / 920, 0, 1) ** 1.5 * 125
@@ -123,10 +126,11 @@ def static_layer():
     d.rounded_rectangle((64, 128, 64 + tw + 48, 188), radius=30, fill=GOLD)
     d.text((88, 136), t, font=f, fill=TEAL)
     fr = font("Medium", 24)
-    label = "Representative footage"
-    rw = d.textlength(label, font=fr)
-    d.rounded_rectangle((60, 200, 60 + rw + 24, 236), radius=18, fill=(0, 0, 0, 120))
-    d.text((72, 203), label, font=fr, fill=(240, 244, 242))
+    if label:
+        label = "Representative footage"
+        rw = d.textlength(label, font=fr)
+        d.rounded_rectangle((60, 200, 60 + rw + 24, 236), radius=18, fill=(0, 0, 0, 120))
+        d.text((72, 203), label, font=fr, fill=(240, 244, 242))
     lg = logo(250)
     d.rounded_rectangle((W - 250 - 84, 118, W - 44, 132 + lg.height + 14), radius=26, fill=(0, 0, 0, 110))
     img.alpha_composite(lg, (W - 250 - 64, 132))
@@ -218,7 +222,7 @@ def hook_img(t):
             ("dairy farmer", f2, WHITE, int(240 * s))]
     draws = [((W - d.textlength(tx, font=f)) / 2, y + dy, tx, f, c + (al,)) for tx, f, c, dy in rows]
     # "is from Kerala" appears with the voice
-    k = ease_out((t - 1.9) / 0.35)
+    k = 0
     if k > 0:
         f3 = font("Medium", 48)
         tx = "is from Kerala"
@@ -307,7 +311,25 @@ def stamp_img(t):
     d.text((x + 36, y - 10), "26 NOV 2026", font=font("Bold", 40), fill=GOLD + (al,))
     d.text((x + 36, y + 44), "National", font=font("Bold", 64), fill=WHITE + (al,))
     d.text((x + 36, y + 118), "Gopal Ratna Award", font=font("Bold", 64), fill=WHITE + (al,))
-    d.text((x + 38, y + 206), "NATIONAL MILK DAY · PATNA", font=font("Bold", 32), fill=GOLD + (al,))
+    d.text((x + 38, y + 206), "BEST DAIRY FARMER · 2026", font=font("Bold", 32), fill=GOLD + (al,))
+    return layer
+
+
+def milkday_img(t):
+    a, b = MILKDAY
+    inn = ease_out((t - a) / 0.4)
+    v = vis(t, a, b, 0.4)
+    al = int(255 * v)
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    x = 64 - int(760 * (1 - inn))
+    y = 470
+    d.rounded_rectangle((x - 10, y - 30, x + 760, y + 300), radius=24, fill=(0, 91, 80, int(215 * v)))
+    d.rectangle((x, y, x + 12, y + 270), fill=GOLD + (al,))
+    d.text((x + 36, y - 10), "26 NOVEMBER", font=font("Bold", 40), fill=GOLD + (al,))
+    d.text((x + 36, y + 44), "National Milk Day", font=font("Bold", 68), fill=WHITE + (al,))
+    d.text((x + 38, y + 140), "Birth anniversary of Dr Verghese Kurien,", font=font("Medium", 32), fill=WHITE + (al,))
+    d.text((x + 38, y + 186), "Father of India's White Revolution", font=font("Bold", 32), fill=GOLD + (al,))
     return layer
 
 
@@ -354,6 +376,7 @@ def end_frame(t, bg):
 
 def overlay_stream():
     base = static_layer()
+    base_nolabel = static_layer(label=False)
     chs = build_chunks()
     bg = Image.open(f"{R}/lastframe.png").convert("RGBA")
     n = round(TOTAL * FPS)
@@ -365,17 +388,20 @@ def overlay_stream():
         if t >= END_START:
             proc.stdin.write(end_frame(t, bg).tobytes())
             continue
-        animated = (HOOK[0] <= t < HOOK[1]) or (NAME[0] <= t < NAME[1]) or (STAMP[0] <= t < STAMP[1]) or any(
+        nolab = any(a <= t < b for a, b in NO_LABEL)
+        animated = (MILKDAY[0] <= t < MILKDAY[1]) or (HOOK[0] <= t < HOOK[1]) or (NAME[0] <= t < NAME[1]) or (STAMP[0] <= t < STAMP[1]) or any(
             c[0] <= t < c[1] for c in COUNTERS)
         cap = None
         for ci, (g, gi, s, e) in enumerate(chs):
             if s <= t < e:
                 cap = (ci, round(min(1, (t - s) / 0.2), 2))
-        ck = (cap,)
+        ck = (cap, nolab)
         if not animated and ck in cache:
             proc.stdin.write(cache[ck])
             continue
-        img = base.copy()
+        img = (base_nolabel if nolab else base).copy()
+        if MILKDAY[0] <= t < MILKDAY[1]:
+            img = Image.alpha_composite(img, milkday_img(t))
         if HOOK[0] <= t < HOOK[1]:
             img = Image.alpha_composite(img, hook_img(t))
         if NAME[0] <= t < NAME[1]:
