@@ -67,7 +67,11 @@ Rule: the gold sun must never sit on gold, and teal text must never sit on teal.
 
 Sunday: the 17:30 slot becomes a "Good news this week" `data` or `hero` roundup of the week's posts.
 
-Story scoring when choosing (0–100): human face / emotion 30 · positive outcome with numbers 20 · freshness 20 · not already viral on big pages 15 · pillar fit + Maharashtra bonus 15. Never repeat a person, company programme or village from the last 60 days (check `posts/*/batch.json`).
+**FRESH + TRENDING FIRST (owner's standing rule, 26 Nov 2026).** Every topic must be news from the last 48 hours (72 h at most), with the event or announcement itself happening in that window — not an old story that a site re-published. Old evergreen stories (e.g. "he started in 2004…") only if a NEW development happened in the last 48 h, and the hook leads with that new development. Prefer stories that are trending right now: covered by several outlets today, trending on Google News / X / Instagram, or being posted by big Indian news pages (e.g. @unfoldingbharat style "BREAKING: Egypt invites Indian companies to set up factories" — fresh, India-positive, big numbers). Search with today's date ("today", "this week", the date) and check every article's publish date before picking.
+
+Story scoring when choosing (0–100): freshness + trending 35 · human face / emotion 20 · positive outcome with clear numbers 20 · India-pride / national interest 10 · pillar fit + Maharashtra bonus 15. Anything older than 72 h scores 0 and is dropped. Never repeat a person, company programme or village from the last 60 days (check `posts/*/batch.json`).
+
+Hooks for fresh news may use a "BREAKING" / "JUST IN" / "BIG NEWS" tag pill when the news is under 24 h old.
 
 ## Where to look
 - Data: csr.gov.in (National CSR Data Portal), PIB releases (Ministry of Corporate Affairs and others), sansad.in Parliament replies, data.gov.in, company annual / BRSR reports.
