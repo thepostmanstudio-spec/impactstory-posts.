@@ -1,5 +1,7 @@
 # Reel 27 Nov 2026, 19:30 IST: format A (stock footage, captions + baked music, English, no voiceover)
 
+**STATUS: SCHEDULED** 27 Nov 2026 19:30 IST, Instagram + Facebook REEL, Metricool id 443561162 (uuid 4990953890464219306). Built with ElevenLabs Ruhaan VO take B + engine/reel27.py, file posts/2026-11-27/reel_sample.mp4. Do not build another Reel today. If the owner drops a real photo of Muralidharan Nair in media/2026-11-27/, rebuild with it and update this post (same uuid).
+
 Topic (fresh: honoured 26 Nov 2026, National Milk Day): Kerala's Muralidharan Nair named India's Best Dairy Farmer (indigenous breeds), National Gopal Ratna Award 2026.
 
 Verified facts (2+ sources each):
