@@ -46,3 +46,16 @@ Sources: GKToday, DairyNews.today, Dairy Dimension
 Representative footage, not of the farm named.
 
 #TheImpactStory #NationalMilkDay #Kerala #DairyFarmer #Farmers #GoodNews
+
+## VO in paragraph form with treatment (use this for recording)
+Voice: warm, confident Indian-English male, storyteller (not news-anchor). Pace ~150 wpm, smile in the voice. Music bed ducks under VO.
+
+India's number one dairy farmer... [beat 0.3s] is from *Kerala*. [pause 0.5s]
+Meet *Muralidharan Nair*, [0.2s] from Kottayam. [0.4s]
+He chose to raise India's *own* [0.2s] indigenous cattle breeds. [0.4s]
+Today, his farm has nearly *five hundred* of them. [0.6s]
+Out of one thousand, five hundred and eighty-three applicants across India... [beat 0.4s] he came *first*. [pause 0.7s, music lifts]
+On National Milk Day, [0.2s] he was honoured with the *National Gopal Ratna Award*, [0.2s] in Patna. [0.4s]
+With a first prize [0.2s] of *five lakh rupees*. [pause 0.8s, music swell]
+Small farms. [0.3s] Big dreams. [0.5s] Follow The Impact Story [0.2s] for more good news.
+(* = stress the word)
