@@ -35,7 +35,7 @@ Start from the previous day's design (`copy-design` / same structure) or a blank
 ### 4. Export and schedule
 - `export-design` PNG width 1080, then schedule in Metricool **right away** (Canva links expire in a few hours).
 - Metricool `instagramData.isAiGenerated: false`. No "AI image" label. Caption line: "Representative photo(s), not of the people named." (or "Representative photos." when no person is named).
-- Reel: export the checked carousel as mp4 (`export-design` type mp4, quality "vertical_1080p"). Canva's mp4 is silent. BAKE THE MUSIC INTO THE MP4 before scheduling: `python3 engine/piano_bed.py <seconds>` → piano.wav, then `ffmpeg -i reel.mp4 -i piano.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -af "afade=t=in:d=0.5,afade=t=out:st=<len-1.4>:d=1.4" -shortest reel_music.mp4`, and check the audio with ffmpeg volumedetect (mean around -19 dB). Do NOT rely on Metricool `audioConfiguration`: on 26 Nov 2026 it was accepted but the Reel published with no music. Never post a silent Reel.
+- Reel: **STOPPED (owner, 26 Nov 2026). Never turn a carousel or static post into a Reel/slideshow again.** Reels are a separate format with their own topic and real video footage; until the owner approves the new Reel plan, the daily batch makes NO Reels (feed posts + Story only). If you ever add music to a video: bake it into the mp4 (engine/piano_bed.py + ffmpeg), never rely on Metricool audioConfiguration.
 - Story: the carousel cover PNG, or a teal text card.
 - The Python engine in `engine/` is a fallback only (if Canva fails, so the day still posts).
 
@@ -57,13 +57,13 @@ Rule: the gold sun must never sit on gold, and teal text must never sit on teal.
 - Mention an Instagram handle only if confirmed from the person's/company's official page; otherwise plain names.
 - Rewrite in your own words. Never copy sentences, layouts or photos from other pages. Photos: free-licence Unsplash/Pexels only, always labelled representative in the caption.
 
-## Daily mix (4 feed posts + 2 Reels + 1 Story)
+## Daily mix (4 feed posts + 1 Story; Reels paused — see Reel rule above)
 | Time (IST) | What | Format |
 |---|---|---|
 | 08:30 | Unsung hero or good-news card | `hero` |
-| 12:30 | Companies doing good (foundation / company programme with results) | `carousel` → also Reel at 13:30 |
+| 12:30 | Companies doing good (foundation / company programme with results) | `carousel` |
 | 17:30 | By the numbers / explainer (government data, reports) | `data` |
-| 20:45 | Changemaker story — Maharashtra first when possible | `carousel` → Reel at 19:30, Story at 21:05 |
+| 20:45 | Changemaker story — Maharashtra first when possible | `carousel` → Story at 21:05 |
 
 Sunday: the 17:30 slot becomes a "Good news this week" `data` or `hero` roundup of the week's posts.
 
