@@ -35,7 +35,7 @@ Start from the previous day's design (`copy-design` / same structure) or a blank
 ### 4. Export and schedule
 - `export-design` PNG width 1080, then schedule in Metricool **right away** (Canva links expire in a few hours).
 - Metricool `instagramData.isAiGenerated: false`. No "AI image" label. Caption line: "Representative photo(s), not of the people named." (or "Representative photos." when no person is named).
-- Reel: export the checked carousel as mp4 (`export-design` type mp4, quality "vertical_1080p"). Canva's mp4 is silent, so schedule as REEL with `instagramData.audioConfiguration: {"audioId": "2477944699150252", "audioVolume": 60}` ("Peaceful Piano", Dr. Pheel; another calm instrumental is fine, never a beat). Never post a silent Reel.
+- Reel: export the checked carousel as mp4 (`export-design` type mp4, quality "vertical_1080p"). Canva's mp4 is silent. BAKE THE MUSIC INTO THE MP4 before scheduling: `python3 engine/piano_bed.py <seconds>` → piano.wav, then `ffmpeg -i reel.mp4 -i piano.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -af "afade=t=in:d=0.5,afade=t=out:st=<len-1.4>:d=1.4" -shortest reel_music.mp4`, and check the audio with ffmpeg volumedetect (mean around -19 dB). Do NOT rely on Metricool `audioConfiguration`: on 26 Nov 2026 it was accepted but the Reel published with no music. Never post a silent Reel.
 - Story: the carousel cover PNG, or a teal text card.
 - The Python engine in `engine/` is a fallback only (if Canva fails, so the day still posts).
 
