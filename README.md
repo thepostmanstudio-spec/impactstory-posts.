@@ -35,7 +35,12 @@ Start from the previous day's design (`copy-design` / same structure) or a blank
 ### 4. Export and schedule
 - `export-design` PNG width 1080, then schedule in Metricool **right away** (Canva links expire in a few hours).
 - Metricool `instagramData.isAiGenerated: false`. No "AI image" label. Caption line: "Representative photo(s), not of the people named." (or "Representative photos." when no person is named).
-- Reel: **STOPPED (owner, 26 Nov 2026). Never turn a carousel or static post into a Reel/slideshow again.** Reels are a separate format with their own topic and real video footage; until the owner approves the new Reel plan, the daily batch makes NO Reels (feed posts + Story only). If you ever add music to a video: bake it into the mp4 (engine/piano_bed.py + ffmpeg), never rely on Metricool audioConfiguration.
+- Reel: **Never turn a carousel or static post into a Reel/slideshow (owner, 26 Nov 2026).** Plan approved 27 Nov 2026:
+  - **1 Reel per day, 19:30 IST**, on its OWN topic (not a feed-post topic): the freshest, most trending India-positive story of the last 48 h.
+  - **Format by content:** A = "BREAKING" news Reel (20–30 s) built from real stock video of India that matches the story (Pexels/Pixabay; check every clip at full size: no foreign-looking places, no readable brand/shop signs in other languages, no AI-looking clips). B = real-people/event Reel from the actual clips: write a clip list with direct links in `posts/<date>/reel_clips.md`, tell the owner in the daily report, and build it once he drops the files in `media/<date>/` (he handles rights). If his clips are not there by 15:00 IST, switch to format A.
+  - **Language: English.** Voiceover: NOT yet (owner deciding) — captions + music only until he says otherwise.
+  - **Build like a pro** with `engine/reel_pro_v3.py` style: hook text on frame 0, shots of about 2 s, word-pop captions with one gold word, number cards, map pin, animated end card with follow prompt, 1080x1920 30 fps, music BAKED INTO the mp4 (`engine/piano_bed.py` + ffmpeg; never Metricool audioConfiguration), check the frames every 0.5 s before scheduling.
+  - Caption line: "Representative footage." when stock is used.
 - Story: the carousel cover PNG, or a teal text card.
 - The Python engine in `engine/` is a fallback only (if Canva fails, so the day still posts).
 
@@ -57,7 +62,7 @@ Rule: the gold sun must never sit on gold, and teal text must never sit on teal.
 - Mention an Instagram handle only if confirmed from the person's/company's official page; otherwise plain names.
 - Rewrite in your own words. Never copy sentences, layouts or photos from other pages. Photos: free-licence Unsplash/Pexels only, always labelled representative in the caption.
 
-## Daily mix (4 feed posts + 1 Story; Reels paused — see Reel rule above)
+## Daily mix (4 feed posts + 1 Reel at 19:30 on its own topic + 1 Story)
 | Time (IST) | What | Format |
 |---|---|---|
 | 08:30 | Unsung hero or good-news card | `hero` |
