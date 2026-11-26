@@ -41,6 +41,7 @@ Start from the previous day's design (`copy-design` / same structure) or a blank
   - **Language: English.** Voiceover: NOT yet (owner deciding) — captions + music only until he says otherwise.
   - **Build like a pro** with `engine/reel_pro_v3.py` style: hook text on frame 0, shots of about 2 s, word-pop captions with one gold word, number cards, map pin, animated end card with follow prompt, 1080x1920 30 fps, music BAKED INTO the mp4 (`engine/piano_bed.py` + ffmpeg; never Metricool audioConfiguration), check the frames every 0.5 s before scheduling.
   - Caption line: "Representative footage." when stock is used.
+  - If `posts/<date>/reel_plan.md` already exists (prepared the night before), use its topic, verified facts and script instead of picking a new Reel topic.
 - Story: the carousel cover PNG, or a teal text card.
 - The Python engine in `engine/` is a fallback only (if Canva fails, so the day still posts).
 
