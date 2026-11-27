@@ -213,5 +213,13 @@
   }
  ],
  "reel_today": "19:30 Gopal Ratna Reel, Metricool 443561162 (scheduled the night before)",
- "status": "designed"
+ "status": "scheduled",
+ "metricool_ids": {
+  "p1": 443803134,
+  "p2": 443803156,
+  "p3": 443803170,
+  "p4": 443803189,
+  "p4_story": 443803206,
+  "reel_1930": 443561162
+ }
 }
