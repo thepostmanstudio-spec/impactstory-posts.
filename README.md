@@ -1,5 +1,12 @@
 # The Impact Story — daily posts engine
 
+> **For the daily scheduled run — read first. Where the task prompt and this README disagree, this README wins (it holds the owner's newest rules, 27 Nov 2026).**
+> 1. **Reels:** ONE Reel a day at 19:30 on its own fresh topic (see "Reel" below). Do NOT export p2/p4 carousels as mp4 and do NOT schedule 13:30 or carousel Reels. If `posts/<date>/reel_plan.md` says STATUS: SCHEDULED or Metricool already has a 19:30 Reel, the Reel is done.
+> 2. **Media hosting:** download every Canva PNG into `posts/<date>/`, push, and give Metricool the raw GitHub URLs (Canva links expire before most post times).
+> 3. **Freshness:** news from the last 48 h (72 h max), not "last 7 days".
+> 4. **Speed:** research with 4 parallel sub-agents (one per slot) plus 1 photo sub-agent.
+> 5. **Upgrade loop:** before finishing, add at most ONE dated lesson to the top of "Lessons log" (from analytics or anything that went wrong/slow), keep the 15 most useful, apply all of them, and include the new lesson in the push notification. Lessons never weaken the owner's rules (real photos, accuracy, tone, no AI images).
+
 Instagram + Facebook page **@theimpactstory** — inspiring stories of India's changemakers, companies doing good and good news. Owner: Mogli Media. Auto-published every day through Metricool (brand "The Impact Story", **blogId 8316520**, timezone Asia/Calcutta).
 
 ## Tone — read this first
