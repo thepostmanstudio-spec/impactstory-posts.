@@ -1,0 +1,217 @@
+{
+ "date": "2026-11-27",
+ "posts": [
+  {
+   "id": "p1",
+   "time": "08:30",
+   "format": "hero",
+   "pillar": "unsung hero",
+   "tag": "Unsung hero",
+   "icon": "star",
+   "headline": "His affordable machines have helped *10,000+ people in Mizoram*",
+   "body": "Lalbiakzuala Ralte builds affordable machines for hill farmers and artisans. On 25 Nov, he won the Jamnalal Bajaj Award and ₹20 lakh in Mumbai.",
+   "source": "EastMojo, ThePrint (PTI)",
+   "caption": "He builds simple machines for the hills of Mizoram 🛠️\n\nLalbiakzuala Ralte makes affordable machines for farmers, artisans and young people in Mizoram's hilly terrain: a portable bamboo incense-stick machine, a noodle maker, a fodder grinder, an arecanut cleaning and husking machine, and ropeways that carry produce down from hillside farms. His work has benefited more than 10,000 people.\n\nOn 25 November in Mumbai, he received the Jamnalal Bajaj Award for Application of Science and Technology for Rural Development, with ₹20 lakh, a citation and a trophy. 🏆\n\nKnow an innovator who deserves this kind of spotlight? Tell us below 👇\n\nSources: EastMojo, ThePrint (PTI)\nRepresentative photo, not of the person named.\n\n#TheImpactStory #Mizoram #RuralInnovation #Northeast #Changemakers #GoodNews",
+   "canva_id": "DAHcEKKc96k",
+   "media": [
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-27/p1.png"
+   ],
+   "photos": [
+    {
+     "page": 1,
+     "direct_url": "https://images.pexels.com/photos/19549863/pexels-photo-19549863.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcEG0bteU",
+     "description": "Pexels 19549863 by Startup MrParag, https://www.pexels.com/photo/an-elderly-man-sitting-on-the-ground-and-weaving-a-bamboo-basket-19549863/"
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "time": "12:30",
+   "format": "carousel",
+   "pillar": "companies doing good",
+   "tag": "Companies doing good",
+   "icon": "school",
+   "headline": "5,000 youth trained. *71% were women*",
+   "sub": "Samsung trained and certified 5,000 young people in Tamil Nadu in AI, coding, big data and IoT in 2025.",
+   "slides": [
+    {
+     "kicker": "The programmes",
+     "icon": "book",
+     "title": "Three paths to *future-ready skills*",
+     "body": "Samsung Innovation Campus (AI, coding, IoT), Solve for Tomorrow (tech ideas for local problems) and Samsung DOST (retail and repair skills)."
+    },
+    {
+     "kicker": "Young innovators",
+     "icon": "star",
+     "title": "6 Tamil Nadu teams in India's *Top 40*",
+     "body": "5,000+ Tamil Nadu students have joined Solve for Tomorrow. One Chennai team is building a pad that turns text and images into Braille."
+    },
+    {
+     "kicker": "Job-ready",
+     "stat": "~1,700",
+     "stat_label": "trained for retail & service jobs",
+     "title": "Learning on the job",
+     "body": "Via Samsung DOST in Tamil Nadu. About 500 more are in on-the-job training now."
+    }
+   ],
+   "takeaway": "Skills open doors to good work. *5,000 more in AI next.*",
+   "source": "Samsung Newsroom India (23 Nov 2026), India CSR (25 Nov 2026)",
+   "caption": "5,000 young people trained. 71% were women. 💻✨\n\nSamsung India's social-good programmes are helping Tamil Nadu's youth build skills for the future. In 2025, Samsung Innovation Campus trained and certified 5,000 young people in the state in AI, coding, big data and IoT, and 71% of them were women.\n\nThrough Solve for Tomorrow, 5,000+ Tamil Nadu students have taken on local problems with technology, and 6 teams from the state reached the national Top 40 this year. Samsung DOST has trained about 1,700 young people for retail and service jobs, with about 500 more in on-the-job training now. 🙌\n\n\"Access to information should never be a barrier,\" says Vishwa Kumaresh of Team TouchPad, Chennai, who is building a tactile pad that turns images and text into Braille.\n\nSave this 🔖 and tag a young person who's building their future.\n\nSources: Samsung Newsroom India, India CSR\nRepresentative photos, not of the people named.\n\n#TheImpactStory #TamilNadu #SkillIndia #WomenInTech #YouthEmpowerment #SocialGood #GoodNews",
+   "reel": false,
+   "reel_note": "No carousel Reel: README owner rule (26 Nov) - never turn a carousel into a Reel; today's single Reel is the 19:30 Gopal Ratna Reel already scheduled.",
+   "canva_id": "DAHcEF5pYGY",
+   "media": [
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-27/p2_1.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-27/p2_2.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-27/p2_3.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-27/p2_4.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-27/p2_5.png"
+   ],
+   "photos": [
+    {
+     "page": 1,
+     "direct_url": "https://images.pexels.com/photos/4622108/pexels-photo-4622108.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcECNXSNs",
+     "description": "Pexels 4622108 by Kiran Pokuri Photography (students with laptop)"
+    },
+    {
+     "page": 2,
+     "direct_url": "https://images.pexels.com/photos/10638070/pexels-photo-10638070.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcEHeQljI",
+     "description": "Pexels 10638070 (students in a computer classroom), https://www.pexels.com/photo/students-sitting-in-the-classroom-10638070/"
+    },
+    {
+     "page": 3,
+     "direct_url": "https://images.pexels.com/photos/35216547/pexels-photo-35216547.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcEDOnytI",
+     "description": "Pexels 35216547 by Multitech Institute (PCB repair workshop)"
+    },
+    {
+     "page": 4,
+     "direct_url": "https://images.pexels.com/photos/33755641/pexels-photo-33755641.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcEKHE94w",
+     "description": "Pexels 33755641 by Multitech Institute (repair technician, New Delhi)"
+    },
+    {
+     "page": 5,
+     "direct_url": null,
+     "canva_asset_id": null,
+     "description": "Warm Gold takeaway page, no photo (decorative from template)"
+    }
+   ]
+  },
+  {
+   "id": "p3",
+   "time": "17:30",
+   "format": "data",
+   "pillar": "by the numbers",
+   "tag": "By the numbers",
+   "icon": "leaf",
+   "stat": "378.5",
+   "stat_label": "million tonnes of foodgrain grown in 2025-26, India's highest ever (final estimates)",
+   "headline": "Thank you, farmers: *a record harvest*",
+   "points": [
+    "Up 20.8 million tonnes (about 5.8%) on 2024-25",
+    "Maize jumped about 27% to 55.03 Mt; rice reached 155.15 Mt",
+    "Wheat: 122.06 Mt. Pulses: up 6.1% to 27.24 Mt"
+   ],
+   "source": "Ministry of Agriculture & Farmers Welfare final estimates (26 Nov 2026) via DD India, Daily Excelsior, ETV Bharat",
+   "caption": "India just grew its biggest harvest ever 🌾\n\nFoodgrain production in 2025-26 reached a record 378.5 million tonnes, according to the Agriculture Ministry's final estimates released on 26 November. That's 20.8 million tonnes (about 5.8%) more than in 2024-25.\n\n🌽 Maize jumped about 27% to 55.03 million tonnes\n🍚 Rice reached 155.15 million tonnes\n🌾 Wheat reached 122.06 million tonnes\n🫘 Pulses rose 6.1% to 27.24 million tonnes\n\nBehind every number are millions of farming families. Thank you! 🙏\n\nSave this 🔖 and share it with someone who loves good news.\n\nSources: Ministry of Agriculture & Farmers Welfare data via DD India, Daily Excelsior, ETV Bharat\nRepresentative photo.\n\n#TheImpactStory #IndianFarmers #Agriculture #FoodSecurity #ByTheNumbers #GoodNews",
+   "canva_id": "DAHcEBH1IZE",
+   "media": [
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-27/p3.png"
+   ],
+   "photos": [
+    {
+     "page": 1,
+     "direct_url": "https://images.pexels.com/photos/10221660/pexels-photo-10221660.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcEIJfaf4",
+     "description": "Pexels 10221660 by zaid mohammed (farmer harvesting), https://www.pexels.com/photo/a-man-harvesting-wheat-on-the-field-10221660/"
+    }
+   ]
+  },
+  {
+   "id": "p4",
+   "time": "20:45",
+   "format": "carousel",
+   "pillar": "changemaker",
+   "tag": "Changemaker",
+   "icon": "leaf",
+   "headline": "1,000 women farmers. Their rice yield is *up about 58%*",
+   "sub": "How women in 25 villages of Sindhudurg, Maharashtra, switched to a new way of growing rice.",
+   "slides": [
+    {
+     "kicker": "The problem",
+     "icon": "drop",
+     "title": "Erratic rain, *rising costs*",
+     "body": "Small farmers on the Konkan coast faced erratic monsoons, costly labour and pricier fertiliser. Old methods kept fields flooded."
+    },
+    {
+     "kicker": "The fix",
+     "stat": "1",
+     "stat_label": "young seedling, planted 25 cm apart",
+     "title": "Women worked each other's fields",
+     "body": "Instead of hiring labour, they farmed as a group and planned on WhatsApp. Fields stayed moist, not flooded."
+    },
+    {
+     "kicker": "The result",
+     "stat": "55.2 kg",
+     "stat_label": "per 100 m², up from 34.9 kg",
+     "title": "From 34.9 kg to *55.2 kg per 100 m²*. About 58% more rice.",
+     "body": "One seedling grew 20-25 shoots, vs 6-12 the old way. The group also farmed 8 more hectares."
+    }
+   ],
+   "takeaway": "\"We women handle the manual work in rice farming.\" When women lead the field, *harvests grow*.",
+   "source": "UNDP India (11 Nov 2026), The Logical Indian (25 Nov 2026)",
+   "caption": "1,000 women farmers. Rice yields up about 58%. 🌾💪\n\nIn 25 villages of Sindhudurg on Maharashtra's Konkan coast, about 1,000 women farmers switched to SRI, a new way of growing rice, across 100 hectares. They planted a single young seedling 25 cm apart, kept fields moist instead of flooded, and worked in each other's fields instead of hiring labour.\n\nThe result: 55.2 kg of rice per 100 m², compared with 34.9 kg on traditional plots. Each plant grew 20-25 shoots from a single seedling. 🌱\n\n\"We women handle the manual work in rice farming,\" says Supriya Gawade of Streeshakti Mahila Gat, Talekarwadi. Now they are leading the change. 🙌\n\nThe work is part of the ECRICC project of the Ministry of Environment, Forest and Climate Change and the Maharashtra Forest Department, supported by the Green Climate Fund and UNDP India, and carried out in Sindhudurg by Dilasa Janvikas Pratishthan (@dilasasanstha).\n\nWhich women farmers' group near you deserves a feature? 👇\n\nSources: UNDP India, The Logical Indian\nRepresentative photos, not of the people named.\n\n#TheImpactStory #Maharashtra #Sindhudurg #WomenFarmers #ClimateAction #Changemakers #GoodNews",
+   "reel": false,
+   "reel_note": "No carousel Reel (README owner rule 26 Nov). Today's Reel = 19:30 Gopal Ratna (reel_plan.md, STATUS: SCHEDULED).",
+   "story": true,
+   "story_time": "21:05",
+   "story_media": "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-27/p4_story.png",
+   "canva_id": "DAHcEDUqxsE",
+   "media": [
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-27/p4_1.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-27/p4_2.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-27/p4_3.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-27/p4_4.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-27/p4_5.png"
+   ],
+   "photos": [
+    {
+     "page": 1,
+     "direct_url": "https://images.pexels.com/photos/12883428/pexels-photo-12883428.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcEFO1L90",
+     "description": "Pexels 12883428 by Nandhu Kumar (woman with rice seedlings, Kerala)"
+    },
+    {
+     "page": 2,
+     "direct_url": "https://images.pexels.com/photos/29039800/pexels-photo-29039800.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcEO0qQoc",
+     "description": "Pexels 29039800 by Alex Jaison (farmer in rice field, Kerala)"
+    },
+    {
+     "page": 3,
+     "direct_url": "https://images.pexels.com/photos/13839277/pexels-photo-13839277.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcEP705dA",
+     "description": "Pexels 13839277 by Danang DKW (hand planting seedlings)"
+    },
+    {
+     "page": 4,
+     "direct_url": "https://images.pexels.com/photos/11070641/pexels-photo-11070641.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcEKcIn2I",
+     "description": "Pexels 11070641 by anjan ghosh (women in paddy field, India)"
+    },
+    {
+     "page": 5,
+     "direct_url": null,
+     "canva_asset_id": null,
+     "description": "Warm Gold takeaway page with template leaf graphic, no new photo"
+    }
+   ]
+  }
+ ],
+ "reel_today": "19:30 Gopal Ratna Reel, Metricool 443561162 (scheduled the night before)",
+ "status": "designed"
+}
