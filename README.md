@@ -67,6 +67,18 @@ Canva retypes the logo as text, so after generating, delete the logo element and
 
 Rule: the gold sun must never sit on gold, and teal text must never sit on teal. Check every page's thumbnail before export.
 
+## Adobe (connected 27 Nov 2026, signed-in account) — how to use it, and what never to use
+Call `adobe_mandatory_init` once before any Adobe tool.
+
+**Use (real photos only):**
+- **Adobe Stock as photo source #1** for India-specific scenes: `asset_search` with `entityScope: "StockAsset"`, `filters: {contentType: "Photo", pricing: "free"}`. **Only pick results with `isGenTech: false`** (Adobe's own flag for AI-made content — anything `true` is banned). Prefer titles naming India/Indian. License with `asset_license_and_download_stock` (size "1600"); free assets license instantly, but if a call returns `confirmationRequired` (a paid quote), do NOT confirm — pick another photo. Record `AdobeStock_<id>` in batch.json `photos`.
+- **Photoshop polish (non-generative):** `image_apply_auto_tone`, `image_apply_adjustments`, `image_crop_and_resize`, `image_auto_straighten` on the licensed URL to fix flat or dark photos before they go into Canva.
+- **Reels:** `media_enhance_speech` to clean a voiceover take; `video_resize` / `video_render_frame` for checks.
+
+**Never use (AI):** `image_generative_expand`, `image_fill_area`, Firefly / `create_firefly_board`, `GenAIAsset` search, any Stock result with `isGenTech: true`, Express generated imagery.
+
+**Handoff status (27 Nov test):** Stock search + free licensing + auto-tone all worked, but the files could not move on: the run's sandbox proxy blocks `stock-apex-images-prod-ew1.s3.eu-west-1.amazonaws.com` and `photoshop-api.adobe.io` (403), and Canva's `upload-asset-from-url` also failed on both URLs. **Until the owner allows those two domains in Claude's network settings**, use Adobe Stock only to *find* and check photos, and keep Pexels/Unsplash as the files that go into Canva. Once allowed: curl the licensed/toned file into `posts/<date>/photos/`, push, and give Canva the raw GitHub URL.
+
 ## Accuracy (posts go out with no human review)
 - Every name, number, place and date must be confirmed in a source you actually read: the primary source (company / NGO / government release, PIB, Parliament reply, csr.gov.in) or **two** independent reliable publications. If you can't confirm it, drop it — don't soften it.
 - Never invent quotes, numbers or rankings. Quotes only word-for-word from a reliable source.
@@ -120,6 +132,7 @@ Public media URL pattern (repo name ends with a dot):
 Warm Gold `#E8B04B` · Deep Teal `#005B50` · Icon Teal `#086654` · White. Poppins. Logos, highlight covers, profile pictures and the Facebook cover are in `assets/`.
 
 ## Lessons log (newest first — every daily run adds at most one dated lesson and applies all of them)
+- 2026-11-27: Adobe Stock search returns India-specific free photos with an `isGenTech` AI flag — use it to find honest, non-AI photos (see "Adobe" section); file handoff still needs the owner's domain allowlist.
 - 2026-11-27: Pexels pages state location and pixel size, so Pexels finds verified Indian photos faster than Unsplash (many Unsplash India results are paid Unsplash+). Check every thumbnail for screens, TV bezels, banners and shirts with text or brand names; crop them out or swap the photo. Prefer photos whose page says the location is India.
 - 2026-11-27: Canva export URLs expired at ~07:30 IST, before most post times. Always host the PNGs in the repo and give Metricool the raw GitHub URLs.
 - 2026-11-27: Two days of data: Reels brought ~70% of reach; feed posts reached 0–2 accounts each. The 19:30 Reel is the growth lever — protect its quality first, and remind the owner to share it to Story.
