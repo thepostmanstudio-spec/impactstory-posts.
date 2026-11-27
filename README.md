@@ -33,7 +33,7 @@ Start from the previous day's design (`copy-design` / same structure) or a blank
 - `read-design` with thumbnails: every word and number matches batch.json; font is Poppins on every text box (if a box shows another font and the tool can't change it, rebuild that text box); contrast is readable; nothing crops a face; no text or logos inside the photo; logo doesn't blend in.
 
 ### 4. Export and schedule
-- `export-design` PNG width 1080, then schedule in Metricool **right away** (Canva links expire in a few hours).
+- `export-design` PNG width 1080, then **download every PNG with curl into `posts/<date>/` (p1.png, p2_1..5.png, p3.png, p4_1..5.png, p4_story.png), commit + push, check the raw URL returns 200, and schedule Metricool with the raw.githubusercontent.com URLs** (Canva export links expire within hours, sometimes before the first post time).
 - Metricool `instagramData.isAiGenerated: false`. No "AI image" label. Caption line: "Representative photo(s), not of the people named." (or "Representative photos." when no person is named).
 - Reel: **Never turn a carousel or static post into a Reel/slideshow (owner, 26 Nov 2026).** Plan approved 27 Nov 2026:
   - **1 Reel per day, 19:30 IST**, on its OWN topic (not a feed-post topic): the freshest, most trending India-positive story of the last 48 h.
@@ -111,3 +111,9 @@ Public media URL pattern (repo name ends with a dot):
 
 ## Brand
 Warm Gold `#E8B04B` · Deep Teal `#005B50` · Icon Teal `#086654` · White. Poppins. Logos, highlight covers, profile pictures and the Facebook cover are in `assets/`.
+
+## Lessons log (newest first — every daily run adds at most one dated lesson and applies all of them)
+- 2026-11-27: Pexels pages state location and pixel size, so Pexels finds verified Indian photos faster than Unsplash (many Unsplash India results are paid Unsplash+). Check every thumbnail for screens, TV bezels, banners and shirts with text or brand names; crop them out or swap the photo. Prefer photos whose page says the location is India.
+- 2026-11-27: Canva export URLs expired at ~07:30 IST, before most post times. Always host the PNGs in the repo and give Metricool the raw GitHub URLs.
+- 2026-11-27: Two days of data: Reels brought ~70% of reach; feed posts reached 0–2 accounts each. The 19:30 Reel is the growth lever — protect its quality first, and remind the owner to share it to Story.
+- 2026-11-27: Research is fastest with 4 parallel sub-agents (one per slot) plus 1 photo agent; give each the exclusion list from the last 60 days.
