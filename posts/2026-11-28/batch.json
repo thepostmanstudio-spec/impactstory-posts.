@@ -1,0 +1,223 @@
+{
+ "date": "2026-11-28",
+ "status": "designed",
+ "reel_today": "19:30 Reel not built (see daily report)",
+ "posts": [
+  {
+   "id": "p1",
+   "time": "08:30",
+   "format": "hero",
+   "pillar": "unsung hero / good news",
+   "tag": "Good news",
+   "icon": "leaf",
+   "headline": "A women's seed bank now supports *5,000+ farmers, 30 villages*",
+   "body": "The Bibi Fatima Women's Self-Help Group of Teertha village, Dharwad (Karnataka), protects indigenous seeds and millets. On 12 Nov, it won the national Plant Genome Saviour Community Award and ₹10 lakh.",
+   "source": "The Better India (23 Nov 2026), Drishti IAS (17 Nov 2026), Adda247 (14 Nov 2026), UNDP (8 Aug 2025), Down To Earth (13 Aug 2025)",
+   "caption": "Their seed bank feeds 5,000+ farmers 🌾\n\nIn Teertha village in Karnataka's Dharwad district, the women of the Bibi Fatima Women's Self-Help Group, led by Bibijan Halemani, protect indigenous seeds and millets and share them with farmers. Their work now supports more than 5,000 farmers across 30 villages, with solar-powered millet processing.\n\nOn 12 November in New Delhi, the group received the Plant Genome Saviour Community Award from the Protection of Plant Varieties and Farmers' Rights Authority, with ₹10 lakh. In 2025, they were also one of 10 global winners of the UNDP Equator Prize. 🏆\n\nWhich traditional grain from your grandmother's kitchen would you love to see return? 👇\n\nSources: The Better India, UNDP, Down To Earth, Drishti IAS\nRepresentative photo, not of the people named.\n\n#TheImpactStory #SeedSavers #WomenFarmers #Millets #Karnataka #GoodNews #RuralIndia",
+   "canva_id": "DAHcKMbSghQ",
+   "media": [
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-28/p1.png"
+   ],
+   "photos": [
+    {
+     "page": 1,
+     "page_url": "https://www.pexels.com/photo/20269183/",
+     "direct_url": "https://images.pexels.com/photos/20269183/pexels-photo-20269183.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcKJla_FM",
+     "description": "Pexels 20269183 by Dibakar Roy, women planting paddy, Tarapith, West Bengal"
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "time": "12:30",
+   "format": "carousel",
+   "pillar": "companies doing good",
+   "tag": "Companies doing good",
+   "icon": "heart",
+   "headline": "Tribal kitchens, *now in Mumbai*",
+   "sub": "Tata Steel Foundation's Samvaad brings tribal cuisine to The Great Indian Feast Trail, Mumbai, 27–29 Nov.",
+   "slides": [
+    {
+     "kicker": "The festival",
+     "stat": "400+",
+     "stat_label": "dishes across 13 food trails",
+     "title": "Tribal recipes at *a 400+ dish festival*",
+     "body": "Samvaad joins The Great Indian Feast Trail at Jio World Garden, BKC: 13 regional food trails and 400+ dishes."
+    },
+    {
+     "kicker": "Where it began",
+     "stat": "2,500+",
+     "stat_label": "participants at Samvaad 2026",
+     "title": "One gathering, *353 tribal communities*",
+     "body": "Samvaad's 13th edition, held in Jamshedpur from 15 to 19 November, brought together 2,500+ participants."
+    },
+    {
+     "kicker": "New voices",
+     "stat": "55%",
+     "stat_label": "were first-time participants",
+     "title": "More than half were new",
+     "body": "And 15% came from Particularly Vulnerable Tribal Groups (PVTGs)."
+    }
+   ],
+   "takeaway": "Food is memory. When it's shared, *culture grows.*",
+   "source": "India CSR (27 Nov 2026), The Great Indian Feast Trail (official site), The Week (15 Nov 2026), ThePrint/PTI (14 Nov 2026)",
+   "caption": "Mumbai, this weekend's menu is centuries old 🍃🔥\n\nTata Steel Foundation's Samvaad, its tribal culture programme, is bringing tribal cuisine to The Great Indian Feast Trail at Jio World Garden, BKC, from 27 to 29 November. The festival has 13 regional food trails and 400+ dishes.\n\nSamvaad's 13th edition in Jamshedpur (15–19 November) brought together 2,500+ participants from 353 tribal communities. 55% were there for the first time, and 15% came from Particularly Vulnerable Tribal Groups. 💛\n\nFood is memory and identity. Go taste it, and say hello.\n\nSave this 🔖 and tag a friend in Mumbai who should try it.\n\nSources: India CSR, The Week, ThePrint (PTI), The Great Indian Feast Trail\nRepresentative photos.\n\n#TheImpactStory #TribalCuisine #Samvaad #TataSteelFoundation #MumbaiFood #SocialGood #GoodNews",
+   "reel": false,
+   "reel_note": "No carousel Reel (README owner rule). Daily Reel = 19:30 on its own topic.",
+   "canva_id": "DAHcKGERQd8",
+   "media": [
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-28/p2_1.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-28/p2_2.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-28/p2_3.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-28/p2_4.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-28/p2_5.png"
+   ],
+   "photos": [
+    {
+     "page": 1,
+     "page_url": "https://www.pexels.com/photo/14596422/",
+     "direct_url": "https://images.pexels.com/photos/14596422/pexels-photo-14596422.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcKAjqAnM",
+     "description": "Pexels 14596422 by Kumar Kranti Prasad, woman cooking on clay stove, Jhargram, West Bengal"
+    },
+    {
+     "page": 2,
+     "page_url": "https://www.pexels.com/photo/35337371/",
+     "direct_url": "https://images.pexels.com/photos/35337371/pexels-photo-35337371.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcKD8qO6Y",
+     "description": "Pexels 35337371 by P G, street food vendor at Malayattoor night festival, Kerala"
+    },
+    {
+     "page": 3,
+     "page_url": "https://www.pexels.com/photo/4848163/",
+     "direct_url": "https://images.pexels.com/photos/4848163/pexels-photo-4848163.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcKBPzXLc",
+     "description": "Pexels 4848163 by Ganta Srinivas, Dhimsa dance, Araku Valley, Andhra Pradesh"
+    },
+    {
+     "page": 4,
+     "page_url": "https://www.pexels.com/photo/35396160/",
+     "direct_url": "https://images.pexels.com/photos/35396160/pexels-photo-35396160.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcKPuMmtw",
+     "description": "Pexels 35396160 by Sanket Mishra, village life, Bihar"
+    },
+    {
+     "page": 5,
+     "description": "Warm Gold takeaway page, no photo"
+    }
+   ]
+  },
+  {
+   "id": "p3",
+   "time": "17:30",
+   "format": "data",
+   "pillar": "by the numbers",
+   "tag": "By the numbers",
+   "icon": "leaf",
+   "stat": "62",
+   "stat_label": "cheetahs now live in India, and 43 of them were born here",
+   "headline": "India's cheetahs: *nearly 70% born at home*",
+   "points": [
+    "9 cubs born at Kuno in two litters (5 Oct, 20 Nov)",
+    "Now living across 3 sites in Madhya Pradesh",
+    "Project Cheetah began on 17 Sep 2022"
+   ],
+   "source": "PIB via DD India (26 Nov 2026), The Week (20 Nov 2026), Business News Week (26 Nov 2026)",
+   "caption": "India's cheetah family keeps growing 🐆💛\n\n🐾 62 cheetahs now live in India\n🇮🇳 43 of them (nearly 70%) were born here\n🍼 9 cubs were born at Kuno National Park in two litters, on 5 October and 20 November\n🌿 They now live across 3 sites in Madhya Pradesh: Kuno, Gandhi Sagar and Veerangana Durgavati\n\nProject Cheetah began on 17 September 2022. Thank you to every ranger, vet and villager who keeps watch. 🙏\n\nSave this 🔖 and share it with a wildlife lover.\n\nSources: PIB via DD India, The Week, Business News Week\nRepresentative photo.\n\n#TheImpactStory #ProjectCheetah #KunoNationalPark #Wildlife #Conservation #GoodNews #ByTheNumbers",
+   "canva_id": "DAHcKJ-1G4o",
+   "media": [
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-28/p3.png"
+   ],
+   "photos": [
+    {
+     "page": 1,
+     "page_url": "https://www.pexels.com/photo/32388041/",
+     "direct_url": "https://images.pexels.com/photos/32388041/pexels-photo-32388041.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcKFUXDTc",
+     "description": "Pexels 32388041 by Kerry Atkins, cheetah resting in grassland (location not stated)"
+    }
+   ]
+  },
+  {
+   "id": "p4",
+   "time": "20:45",
+   "format": "carousel",
+   "pillar": "changemaker",
+   "tag": "Changemaker",
+   "icon": "book",
+   "headline": "A 17-year-old turned a storage room into a *2,000-book library*",
+   "sub": "In Bengaluru, Asavari Agrawal and student volunteers gave a government school its first library.",
+   "slides": [
+    {
+     "kicker": "The before",
+     "icon": "school",
+     "title": "A school with *only textbooks*",
+     "body": "The government school in Mullur Colony, Bengaluru, had no library. One of its rooms was used for storage."
+    },
+    {
+     "kicker": "Every Saturday",
+     "stat": "~250",
+     "stat_label": "children reached by ~50 volunteers",
+     "title": "Nearly five years of showing up",
+     "body": "Asavari started Shape the Future at 13. Saturdays bring reading hours, sport, art and health camps."
+    },
+    {
+     "kicker": "The after",
+     "icon": "book",
+     "title": "From a storage room *to 2,000+ books.* The school's first library.",
+     "body": "The volunteers turned the storage room into a library stocked with more than 2,000 books."
+    }
+   ],
+   "takeaway": "\"Start with 10 children, but stay.\" When young people show up, *futures change.*",
+   "source": "The Logical Indian (27 Nov 2026), The Better India (13 Nov 2026), Citizen Matters (16 Nov 2026)",
+   "caption": "📚 What happens when a teenager never skips a Saturday?\n\nAt a government school in Bengaluru's Mullur Colony, children had textbooks but no library. Today, a room once used for storage holds more than 2,000 books.\n\nThat change came from 17-year-old Asavari Agrawal and her student volunteers. She started Shape the Future at 13, and for nearly five years they have spent Saturdays on reading hours, sport, art and health camps. About 50 volunteers now reach roughly 250 children. 💛\n\nHer advice to other young people: \"Start with 10 children, but stay.\"\n\nWho kept showing up for you? Tag them below 👇\n\nSources: The Logical Indian, The Better India, Citizen Matters\nRepresentative photos, not of the people named.\n\n#TheImpactStory #Bengaluru #YouthChangemakers #Libraries #Education #Changemakers #GoodNews",
+   "reel": false,
+   "story": true,
+   "story_time": "21:05",
+   "story_media": "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-28/p4_story.png",
+   "canva_id": "DAHcKNQZBmo",
+   "media": [
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-28/p4_1.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-28/p4_2.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-28/p4_3.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-28/p4_4.png",
+    "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-28/p4_5.png"
+   ],
+   "photos": [
+    {
+     "page": 1,
+     "page_url": "https://www.pexels.com/photo/18650478/",
+     "direct_url": "https://images.pexels.com/photos/18650478/pexels-photo-18650478.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcKGTsJ9A",
+     "description": "Pexels 18650478 by school projects, two children reading, Gurugram, Haryana"
+    },
+    {
+     "page": 2,
+     "page_url": "https://www.pexels.com/photo/1895114/",
+     "direct_url": "https://images.pexels.com/photos/1895114/pexels-photo-1895114.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcKDP6YKw",
+     "description": "Pexels 1895114 by Balljinder Singh, schoolchildren on classroom floor, India"
+    },
+    {
+     "page": 3,
+     "page_url": "https://www.pexels.com/photo/13806486/",
+     "direct_url": "https://images.pexels.com/photos/13806486/pexels-photo-13806486.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcKOYQ8oM",
+     "description": "Pexels 13806486 by Mehmet Turgut Kirkgoz, schoolyard circle game (tagged India)"
+    },
+    {
+     "page": 4,
+     "page_url": "https://www.pexels.com/photo/33745692/",
+     "direct_url": "https://images.pexels.com/photos/33745692/pexels-photo-33745692.jpeg?auto=compress&cs=tinysrgb&w=1600",
+     "canva_asset_id": "MAHcKMeu_6Y",
+     "description": "Pexels 33745692 by Gokuldham Nar, students in a library, Petlad, Gujarat"
+    },
+    {
+     "page": 5,
+     "description": "Warm Gold takeaway page, no photo"
+    }
+   ]
+  }
+ ]
+}
