@@ -132,6 +132,7 @@ Public media URL pattern (repo name ends with a dot):
 Warm Gold `#E8B04B` · Deep Teal `#005B50` · Icon Teal `#086654` · White. Poppins. Logos, highlight covers, profile pictures and the Facebook cover are in `assets/`.
 
 ## Lessons log (newest first — every daily run adds at most one dated lesson and applies all of them)
+- 2026-11-28: Metricool returned "account limit" errors for every post after 12:30 on 27 Nov. Each run must first check yesterday's posts with getScheduledPosts (ERROR status) and alert the owner at the top of the notification before building anything.
 - 2026-11-27: Adobe Stock search returns India-specific free photos with an `isGenTech` AI flag — use it to find honest, non-AI photos (see "Adobe" section); file handoff still needs the owner's domain allowlist.
 - 2026-11-27: Pexels pages state location and pixel size, so Pexels finds verified Indian photos faster than Unsplash (many Unsplash India results are paid Unsplash+). Check every thumbnail for screens, TV bezels, banners and shirts with text or brand names; crop them out or swap the photo. Prefer photos whose page says the location is India.
 - 2026-11-27: Canva export URLs expired at ~07:30 IST, before most post times. Always host the PNGs in the repo and give Metricool the raw GitHub URLs.

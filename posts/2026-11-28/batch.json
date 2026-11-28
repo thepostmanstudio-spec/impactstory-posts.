@@ -1,7 +1,7 @@
 {
  "date": "2026-11-28",
- "status": "designed",
- "reel_today": "19:30 Reel not built (see daily report)",
+ "status": "scheduled",
+ "reel_today": "Not built: Metricool account-limit errors would block it; no reel_plan prepared.",
  "posts": [
   {
    "id": "p1",
@@ -13,7 +13,7 @@
    "headline": "A women's seed bank now supports *5,000+ farmers, 30 villages*",
    "body": "The Bibi Fatima Women's Self-Help Group of Teertha village, Dharwad (Karnataka), protects indigenous seeds and millets. On 12 Nov, it won the national Plant Genome Saviour Community Award and ₹10 lakh.",
    "source": "The Better India (23 Nov 2026), Drishti IAS (17 Nov 2026), Adda247 (14 Nov 2026), UNDP (8 Aug 2025), Down To Earth (13 Aug 2025)",
-   "caption": "Their seed bank feeds 5,000+ farmers 🌾\n\nIn Teertha village in Karnataka's Dharwad district, the women of the Bibi Fatima Women's Self-Help Group, led by Bibijan Halemani, protect indigenous seeds and millets and share them with farmers. Their work now supports more than 5,000 farmers across 30 villages, with solar-powered millet processing.\n\nOn 12 November in New Delhi, the group received the Plant Genome Saviour Community Award from the Protection of Plant Varieties and Farmers' Rights Authority, with ₹10 lakh. In 2025, they were also one of 10 global winners of the UNDP Equator Prize. 🏆\n\nWhich traditional grain from your grandmother's kitchen would you love to see return? 👇\n\nSources: The Better India, UNDP, Down To Earth, Drishti IAS\nRepresentative photo, not of the people named.\n\n#TheImpactStory #SeedSavers #WomenFarmers #Millets #Karnataka #GoodNews #RuralIndia",
+   "caption": "Their seed bank feeds 5,000+ farmers 🌾\n\nIn Teertha village in Karnataka's Dharwad district, the women of the Bibi Fatima Women's Self-Help Group, led by Bibijan Halemani, protect indigenous seeds and millets. Their work now supports more than 5,000 farmers across 30 villages, with solar-powered millet processing.\n\nOn 12 November in New Delhi, the group received the Plant Genome Saviour Community Award from the Protection of Plant Varieties and Farmers' Rights Authority, with ₹10 lakh. In 2025, they were also one of 10 global winners of the UNDP Equator Prize. 🏆\n\nWhich traditional grain from your grandmother's kitchen would you love to see return? 👇\n\nSources: The Better India, UNDP, Down To Earth, Drishti IAS\nRepresentative photo, not of the people named.\n\n#TheImpactStory #SeedSavers #WomenFarmers #Millets #Karnataka #GoodNews #RuralIndia",
    "canva_id": "DAHcKMbSghQ",
    "media": [
     "https://raw.githubusercontent.com/thepostmanstudio-spec/impactstory-posts./main/posts/2026-11-28/p1.png"
@@ -219,5 +219,13 @@
     }
    ]
   }
- ]
+ ],
+ "metricool_ids": {
+  "p1": 445026576,
+  "p2": 445026593,
+  "p3": 445026606,
+  "p4": 445026612,
+  "p4_story": 445026624,
+  "p3_2026-11-27_rescheduled_1030": 444497569
+ }
 }
